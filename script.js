@@ -89,6 +89,7 @@ const resetCountDown = () => {
   clearInterval(countdownActive);
   countdownTitle = '';
   countdownDate = '';
+  localStorage.removeItem('countdown');
 };
 
 const restoreCountdown = () => {
